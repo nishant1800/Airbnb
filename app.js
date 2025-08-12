@@ -5,7 +5,7 @@ const Listing = require("./models/listing.js");
 
 const MONGO_URL = "127.0.0.1:27017/wanderlust";
 
-main
+main()
     .then(() => {
         console.log("connected to DB");
     })
