@@ -9,9 +9,8 @@ const listingSchema = new Schema({
     },
     description: String,
     image: {
-        type: String,
-        default: "https://unsplash.com/photos/man-sit-in-front-projector-screen-MYlCex1M7Ok",
-        set: (v) => v === "" ? "https://unsplash.com/photos/man-sit-in-front-projector-screen-MYlCex1M7Ok" : v,
+        url: String,
+        filename: String,
     },
     price: Number,
     location: String,
