@@ -5,6 +5,7 @@
     #filters {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .filter {
@@ -23,12 +24,18 @@
         font-size: 0.9rem;
     }
 
-    .tax-toggle {
-        margin-top: 2.5rem;
-    }
-
     .tax-info {
         display: none;
+    }
+
+    .tax-toggle {
+        border: 1px solid black;
+        border-radius: 1rem;
+        height: 3.2rem;
+        padding: 1rem;
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
     }
 
 </style>
@@ -74,6 +81,27 @@
         <p>Farms</p>
     </div>
 
+    <div class="filter">
+        <div> <i class="fa-solid fa-fire"></i> </div>
+        <p>Hot</p>
+    </div>
+
+    <div class="filter">
+        <div> <i class="fa-solid fa-umbrella-beach"></i> </div>
+        <p>Winter</p>
+    </div>
+
+    <div class="filter">
+        <div> <i class="fa-solid fa-igloo"></i> </div>
+        <p>Domes</p>
+    </div>
+
+    <div class="filter">
+        <div> <i class="fa-solid fa-fire"></i> </div>
+        <p>Boat</p>
+    </div>
+
+
     <div class="tax-toggle">
         <div class="form-check-reverse form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
@@ -109,6 +137,13 @@
 <script>
     let taxSwitch = document.getElementById("flexSwitchCheckDefault");
     taxSwitch.addEventListener("click", () => {
-        console.log("clicked");
-    })
+        let taxInfo = document.getElementsByClassName("tax-info");
+        for(info of taxInfo) {
+            if(info.style.display != "inline") {
+                info.style.display = "inline";
+            } else {
+                info.style.display = none;
+            }
+        }
+    });
 </script>
