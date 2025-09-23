@@ -29,19 +29,10 @@ It allows users to register, create listings, upload images, add reviews, and ma
 
 ---
 
-## 📂 Project Structure
-Airbnb-Clone/
-│── models/ # Mongoose Schemas (User, Listing, Review)
-│── routes/ # Express routes (listings, reviews, users)
-│── controllers/ # Controllers for route logic
-│── public/ # Static assets (CSS, JS, Images)
-│── views/ # EJS templates
-│── utils/ # Error handling & middlewares
-│── app.js # Main Express app
-│── package.json # Dependencies & scripts
-│── .env # Environment variables
-│── README.md # Documentation
+## 🌐 Live Demo
 
+Check out the live version of the project deployed on **Render**:  
+👉 [Airbnb Clone on Render](https://airbnb-a04e.onrender.com)
 
 ---
 
