@@ -40,5 +40,5 @@ Check out the live version of the project deployed on **Render**:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/airbnb-clone.git
+   git clone https://github.com/nishant1800/airbnb-clone.git
    cd airbnb-clone
